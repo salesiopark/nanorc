@@ -1,4 +1,5 @@
-# .nanorc ver 1.0
+
+# .nanorc ver 1.0 : re-bind shortcuts by salesiopark =============
 
 set nohelp	# don't display help list at the bottom
 set mouse	# click:set caret, double click : set mark
