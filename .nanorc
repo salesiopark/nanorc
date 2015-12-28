@@ -1,0 +1,45 @@
+# .nanorc ver 1.0
+
+set nohelp	# don't display help list at the bottom
+set mouse	# click:set caret, double click : set mark
+set morespace	# use the blank line below the title bar to edit
+set quickblank	# do quick statusbar blanking (after 1 keystroke)
+set regexp	# do extended regex searches
+set smooth	# use smooth scrolling
+set suspend	# allow nano to be suspended
+
+set tabsize 4	# tab to 4 spaces
+set tabstospaces
+
+set undo 	# enable experimental generic-purpose undo code
+
+# re-binding shortcuts
+
+unbind ^U main
+unbind ^W main
+
+bind ^Q exit main
+
+bind ^S writeout main
+bind ^O insert main
+
+bind ^F whereis main
+bind ^G searchagain main
+bind ^R replace main
+
+bind ^Z undo main
+bind ^Y redo main
+
+# Editing shortcuts
+# alt-6 : start/cancel select (mark)
+# ^K : cut (one line or marked block)
+bind ^X cut main
+bind ^V uncut main
+bind ^C copytext main
+
+bind ^P prevword main
+bind ^N nextword main
+bind ^B firstline main
+bind ^E lastline main
+bind ^L curpos main
+bind ^J gotoline main
