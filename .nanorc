@@ -34,6 +34,7 @@ bind ^Y redo main
 # Editing shortcuts
 # alt-6 : start/cancel select (mark)
 # ^K : cut (one line or marked block)
+bind ^A mark main
 bind ^X cut main
 bind ^V uncut main
 bind ^C copytext main
